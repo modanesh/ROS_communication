@@ -2,7 +2,7 @@
 This is a simple project that make a ROS service-client connection between Python and C++ modules. Either of them can be either the service or the client.
 
 
-##How to run?
+## How to run?
 - in a catkin workspace, run `catkin_make`
 - run `roscore` to initialize ros
 - in another terminal, run `source ~/catkin_ws/devel/setup.bash`
