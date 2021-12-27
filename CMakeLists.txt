@@ -12,11 +12,11 @@ generate_messages()
 catkin_package(CATKIN_DEPENDS roscpp roslib message_runtime)
   
 include_directories(${catkin_INCLUDE_DIRS})
-add_executable(vsumm_service src/vsumm_service.cpp)
-add_executable(vsumm_client src/vsumm_client.cpp)
+add_executable(vsum_service src/vsum_service.cpp)
+add_executable(vsum_client src/vsum_client.cpp)
 
-target_link_libraries(vsumm_service ${catkin_LIBRARIES})
+target_link_libraries(vsum_service ${catkin_LIBRARIES})
 
-target_link_libraries(vsumm_client ${catkin_LIBRARIES})
+target_link_libraries(vsum_client ${catkin_LIBRARIES})
 
-catkin_install_python(PROGRAMS nodes/vsumm_service_python.py DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+catkin_install_python(PROGRAMS nodes/vsum_service_python.py DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
